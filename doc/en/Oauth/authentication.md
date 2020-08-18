@@ -42,7 +42,7 @@ http://testapi.coupang.blsct.com/product/get?id=1 | GET | Yes |
 Authorization-request
 ```
 https://coupang.blsct.com/oauth/token/get
-POST applocation/json
+POST application/json
 {
     "app_id":"coupang",
     "app_secret":"coupangTest"
