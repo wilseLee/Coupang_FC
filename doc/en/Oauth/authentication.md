@@ -44,8 +44,8 @@ Authorization-request
 https://coupang.blsct.com/oauth/token/get
 POST application/json
 {
-    "app_id":"100635296",
-    "app_secret":"lTb7SsRgCIyzM81zIp6q"
+    "app_id":"your appId",
+    "app_secret":"your appSecret"
 }
 ```
 Authorization-response
