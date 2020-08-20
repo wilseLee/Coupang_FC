@@ -50,7 +50,7 @@ Post /product/SyncPushSkuInfos
 skuId|string|true|2020081317|SKU唯一标识
 images|List&lt;string&gt; |true|["http://img.blsct.com/14d4c58a-0893-4053-a395-9f5093c2ba0b.jpg","http://img.blsct.com/6cfb27e4-efcd-48e1-83b5-72d4485ec618.jpg"]|SKU图片URL集合
 originalTitle|string|true|宽松V领无袖T恤|SKU标题|
-englishTitle|string|true|Loose V-neck sleeveless T-shirt||SKU标题（英文）|
+englishTitle|string|true|Loose V-neck sleeveless T-shirt | SKU标题（英文）|
 weight|decimal|true|150|SKU重量，单位g|
 description|string|false|200812_宽松V领无袖T恤上衣(货号6240)_酒红色_L|描述SKU一些基本资料信息，不超过500个字符|
 long|decimal|true|33|SKU长度，单位cm|
