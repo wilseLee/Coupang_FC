@@ -43,7 +43,7 @@ response json
 
 #  Input parameter description
 ## ProSkuInfos DTO
-parameter | type | Required | example | field description
+parameter | type | required | example | field description
 ---|---|---|---|---
 skuId|string|true|2020081317|SKU unique identifier
 images|List&lt;string&gt; |true|["http://img.blsct.com/14d4c58a-0893-4053-a395-9f5093c2ba0b.jpg","http://img.blsct.com/6cfb27e4-efcd-48e1-83b5-72d4485ec618.jpg"]|SKU image URL collection
