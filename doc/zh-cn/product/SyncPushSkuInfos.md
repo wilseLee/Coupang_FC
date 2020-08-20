@@ -26,11 +26,10 @@ Post /product/SyncPushSkuInfos
         "Brand":"unbrand",
         "SupplierId":23456,
         "SupplierName":"广州百伦服装",
-        "ValidPeriod":"2020-08-01",
-        "ProductCharacter":[1,5,7],
+        "ValidPeriod":"2020-08-01"     "ProductCharacter":[1,5,7],
         "VariationSpecificInfo":{"Color":"Blue"},
   }
-[
+]
 ```
 
 

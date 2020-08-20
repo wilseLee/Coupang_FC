@@ -1,7 +1,7 @@
 ## request
 Request method | Request path
 ---|---
-Post | /product/SyncPushSkuInfos
+Post | http://product.skums.blsct.com/product/syncpushskuinfos
 
 **Call instructions**
 *  Please make sure that the SKU data is correct. Once the push is pushed, the subsequent push will not update.
@@ -9,12 +9,11 @@ Post | /product/SyncPushSkuInfos
 *  Please do not push non-semantic content such as enumerations for some materials. Please convert the enumerations into copy content before pushing. This API does not exist to parse third-party enumeration fields.
 
 # Request example
-Request parameter json
-### List&lt;ProSkuInfos&gt; DTO
 ```json
-[
+curl -X POST  -H 'Content-Type:application/json' -H 'Authorization: bearer eyJhbGciOiJIUzI1NiJ9' --data '[
   {
-        "SkuId":"2020081317",
+        "SkuId":"20200815678",
+        "GourpCode":"20200813",
         "Images":["http://img.blsct.com/14d4c58a-0893-4053-a395-9f5093c2ba0b.jpg","http://img.blsct.com/6cfb27e4-efcd-48e1-83b5-72d4485ec618.jpg"],
         "OriginalTitle":"宽松V领无袖T恤",
         "EnglishTitle":"Loose V-neck sleeveless T-shirt",
@@ -30,13 +29,13 @@ Request parameter json
         "ProductCharacter":[1,5,7],
         "VariationSpecificInfo":{"Color":"Blue"},
   }
-[
+]' http://product.skums.blsct.com/product/syncpushskuinfos
 ```
 response json
 ```json
 {
-  "Message": "string",
-  "Code":int
+  "Message": "",
+  "Code":100
 }
 ```
 
