@@ -28,9 +28,9 @@ Field | Type | Description
 sku|string|Product Sku code
 title|string | Chinese title
 enTitle|string|English title
-pendingStock|long|The goods are in transit and waiting to be put on the shelf inventory quantity
-availabelStock|long|Product sku can ship inventory quantity
-shippedStock|long|Product sku shipped inventory quantity
+pendingStock|long|The goods are in transit and waiting to be put on the shelf inventory quantity(The supplier has shipped the goods, the goods are on the way, and the quantity has not reached the warehouse)
+availabelStock|long|Product sku can ship inventory quantity(The actual inventory quantity that can be shipped in the warehouse)
+shippedStock|long|Product sku shipped inventory quantity(The actual number of stocks that the warehouse has sent out)
 lastModificationTime|datetime|The last change time of product sku inventory(UTC)
 
 # pages DTO

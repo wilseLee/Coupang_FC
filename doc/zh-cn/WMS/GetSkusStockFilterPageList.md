@@ -32,9 +32,9 @@ data|Array| 请求返回数据集合
 sku|string|产品Sku
 title|string | 中文标题
 enTitle|string|英文标题
-pendingStock|long|货物已在途待上架库存数量
-availabelStock|long|产品sku可发货库存数量
-shippedStock|long|产品sku已发货库存数量
+pendingStock|long|货物已在途待上架库存数量(供应商已经发货，货物在途中，还没有到达仓库的数量)
+availabelStock|long|产品sku可发货库存数量(仓库内真实的可以发货的库存数量)
+shippedStock|long|产品sku已发货库存数量(仓库实际已经发出去的库存数)
 lastModificationTime|datetime|产品sku库存最后变动时间(UTC)
 
 # pages 输出参数说明
