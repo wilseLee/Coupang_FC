@@ -1,7 +1,7 @@
 ## request
 Request method | Request path
 ---|---
-Post | http://product.skums.blsct.com/product/syncpushskuinfos
+Post | https://testapi.coupang.blsct.com/product/syncpushskuinfos
 
 **Call instructions**
 *  Please make sure that the SKU data is correct. Once the push is pushed, the subsequent push will not update.
@@ -29,7 +29,7 @@ curl -X POST  -H 'Content-Type:application/json' -H 'Authorization: bearer eyJhb
         "ProductCharacter":[1,5,7],
         "VariationSpecificInfo":{"Color":"Blue"},
   }
-]' http://product.skums.blsct.com/product/syncpushskuinfos
+]' https://testapi.coupang.blsct.com/product/syncpushskuinfos
 ```
 response json
 ```json

@@ -36,8 +36,8 @@ Common status codes: normal (200), error request (400), service error (500), una
   
 Request url | Request method | Authorization required |
 ---|---|---|
-http://testapi.coupang.blsct.com/test | GET |No |
-http://testapi.coupang.blsct.com/test/get?id=1 | GET | Yes |
+https://testapi.coupang.blsct.com/test | GET |No |
+https://testapi.coupang.blsct.com/test/get?id=1 | GET | Yes |
 
 Authorization-request
 ```
@@ -60,7 +60,7 @@ Authorization-response
 ```
 Resource api-request
 ```
-http://testapi.coupang.blsct.com/product/get?id=1
+https://testapi.coupang.blsct.com/product/get?id=1
 Get 
 Authorization: Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IkJBREM3QTNCQ0U5RjlFQUNFNDg1RjI4NkU5QzU1ODM5OUJCMkM4MUNSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6InV0eDZPODZmbnF6a2hmS0c2Y1ZZT1p1eXlCdyJ9.eyJuYmYiOjE1OTc3MTQ0NTAsImV4cCI6MTU5NzcxODA1MCwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo1MDA2IiwiY2xpZW50X2lkIjoidGVzdENsaWVudCIsImp0aSI6IjYyNDMwRDM4QjFGMzI4NEI4Q0NGODFCRDdEMUVCNkI0IiwiaWF0IjoxNTk3NzE0NDUwLCJzY29wZSI6WyJiYWlsdW5BcGkiXX0.YlhbfO7bTcSiO2kJ5aBOURZn4DWxN-ZGp-niKrw3zOtPSE7BfqAo1opjTyTqIE_MbXQCobYHP2XUvNhaV8kfArOsD-Ip75NXlxEx9XcedgEARJ9yCXFVW6T_U-0LSdm6dgYsTlXypc_Ut9uyEWUJL35dglfRPDb16y6EdPg8YZvyRYAhARZLPhkGLAvruipjT74fnuO-AIYS02KoYCaChnUsoOFIL4r11nX8gsLUkMuHqwqjngFVjjMJSd1QL9iluTv5_sqYAsOKcvS2aS4OVf-VnGqeE7Revn7BEGjQ1GkIQBJ0onBFHg5b5rf9Ulasw
 ```
