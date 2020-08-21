@@ -1,4 +1,4 @@
-## OMS gets order status
+## OMS gets order status (Not implemented)
 
 Request method | Request path
 ---|---
@@ -48,7 +48,7 @@ Get | /apiV2/bailunOrder/queryOrderStatus
 | OriginOrderNo | string | True | xxxx | Platform order number         |
 | OrderStatus | OrderStatusDTO | True |  | Order Status         | 
 | TrackingNo | string | False | xxxx | Tracking Number (Logistic Number)   |
-| LastUpdateTime | string | True | 2020-01-03 00:00:00 | Last update time |
+| LastUpdateTime | string | True | 2020-01-03 00:00:00 | Last update time(UTC) |
 
 
 

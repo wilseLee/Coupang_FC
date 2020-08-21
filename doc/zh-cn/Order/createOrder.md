@@ -1,4 +1,4 @@
-## OMS推送订单接口
+## OMS推送订单接口(未实现)
 请求方式 | 请求路径
 ---|---
 POST| /api/order/createOrder
@@ -61,7 +61,7 @@ POST| /api/order/createOrder
 | 字段                | 字段说明                 | 示例                | 字段类型               | Required |
 | :------------------ | :----------------------- | ------------------- | :--------------------- | -------- |
 | OriginOrderNo       | 原始订单号,平台单号      | 32000064249278      | string                 | true     |
-| LastUpdateTimeUtc   | 最后更新时间             | 2020-02-02 08:15:30 | DateTime               | true     |
+| LastUpdateTimeUtc   | 最后更新时间(UTC)             | 2020-02-02 08:15:30 | DateTime               | true     |
 | ReceiptAddress      | 收货地址                 |                     | ReceiptAddress         | true     |
 | PlatSkuItems        | sku信息                  |                     | List<PlatSkuItemInput> | true     |
 

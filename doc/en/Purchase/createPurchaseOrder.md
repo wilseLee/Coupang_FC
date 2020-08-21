@@ -1,4 +1,4 @@
-## Purchase order
+## Purchase order (Not implemented)
 Request method | Request path
 ---|---
 |Post | /api/purchase/service/createPurchaseOrder
@@ -13,7 +13,7 @@ poNumber|string|true|Purchase Order No
 trackingBarCode|string|true|Logistics tracking barcode (used to scan the code offline)
 remark|string|false|Order remarks
 orderId|string|true|order number
-arrivalDate|date|true|Estimated arrival date to the warehouse
+arrivalDate|date|true|Estimated arrival date to the warehouse (UTC)
 skudetails|List&lt;skudetail&gt;|true|sku details
 
 ## skudetail DTO Field description

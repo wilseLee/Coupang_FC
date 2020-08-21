@@ -1,9 +1,7 @@
-## OMS Push order Api
+## OMS Push order Api(Not implemented)
 Request method | Request path
 ---|---
 POST| /api/order/createOrder
-
-  
 
 ## Request description
 
@@ -61,7 +59,7 @@ POST| /api/order/createOrder
 | Field  | Field description  | Example    | Field Type  | Required |
 | :------------------ | :----------------------- | ------------------- | :--------------------- | -------- |
 | OriginOrderNo | Original order number(platform order number) | 32000064249278      | string                 | true     |
-| LastUpdateTimeUtc   | Last update time             | 2020-02-02 08:15:30 | DateTime               | true     |
+| LastUpdateTimeUtc   | Last update time(UTC)             | 2020-02-02 08:15:30 | DateTime               | true     |
 | ReceiptAddress      | Shipping address                 |                     | ReceiptAddress         | true     |
 | PlatSkuItems        | sku information                  |                     | List<PlatSkuItemInput> | true     |
 

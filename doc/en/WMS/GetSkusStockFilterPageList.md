@@ -1,4 +1,4 @@
-## Incremental query product sku inventory information
+## Incremental query product sku inventory information (Not implemented)
 Request method | Request path
 ---|---
 GET | /stock/getFilterPageList
@@ -16,8 +16,8 @@ Parameter | Type | Required | Default value | Description
 pageIndex|int|true|1|Page number, starting from 1
 pageSize|int|true|20|Page capacity (maximum 200)
 sku|string|false||Single product sku code
-startDate|datetime|true||Incremental query start time
-endDate|datetime|true||Incremental query end time
+startDate|datetime|true||Incremental query start time(UTC)
+endDate|datetime|true||Incremental query end time(UTC)
 
 #  Common output parameters
 Parameters | Type | Description
@@ -36,7 +36,7 @@ enTitle|string|English title
 pendingStock|long|The goods are in transit and waiting to be put on the shelf inventory quantity
 availabelStock|long|Product sku can ship inventory quantity
 shippedStock|long|Product sku has shipped inventory quantity
-lastModificationTime|datetime|Product sku inventory last change time
+lastModificationTime|datetime|Product sku inventory last change time(UTC)
 
 ### pages DTO
 Field | Type | Description

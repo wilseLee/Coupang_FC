@@ -1,4 +1,4 @@
-## 增量分页查询产品sku库存信息接口
+## 增量分页查询产品sku库存信息接口(未实现)
 请求方式 | 请求路径
 ---|---
 GET | /stock/getFilterPageList
@@ -16,8 +16,8 @@ GET | /stock/getFilterPageList
 pageIndex|int|是|1|页码，从1开始
 pageSize|int|是|20|分页大小(最大200条)
 sku|string|否||单个产品sku编码
-startDate|datetime|是||增量查询开始时间
-endDate|datetime|是||增量查询结束时间
+startDate|datetime|是||增量查询开始时间(UTC)
+endDate|datetime|是||增量查询结束时间(UTC)
 
 #  公共输出参数
 参数 | 类型|描述
@@ -35,7 +35,7 @@ enTitle|string|英文标题
 pendingStock|long|货物已在途待上架库存数量
 availabelStock|long|产品sku可发货库存数量
 shippedStock|long|产品sku已发货库存数量
-lastModificationTime|datetime|产品sku库存最后变动时间
+lastModificationTime|datetime|产品sku库存最后变动时间(UTC)
 
 # pages 输出参数说明
 字段 | 类型 |描述

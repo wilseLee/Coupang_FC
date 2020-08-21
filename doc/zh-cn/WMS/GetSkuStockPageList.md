@@ -1,4 +1,4 @@
-## 全量分页查询产品sku库存信息接口
+## 全量分页查询产品sku库存信息接口 (未实现)
 请求方式 | 请求路径
 ---|---
 GET | /stock/getPageList
@@ -31,7 +31,7 @@ enTitle|string|英文标题
 pendingStock|long|货物已在途待上架库存数量
 availabelStock|long|产品sku可发货库存数量
 shippedStock|long|产品sku已发货库存数量
-lastModificationTime|datetime|产品sku库存最后变动时间
+lastModificationTime|datetime|产品sku库存最后变动时间(UTC)
 
 # pages 输出参数说明
 字段 | 类型 |描述

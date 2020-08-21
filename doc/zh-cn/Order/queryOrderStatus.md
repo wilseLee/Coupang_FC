@@ -1,4 +1,4 @@
-## 百伦OMS获取订单状态
+## 百伦OMS获取订单状态(未实现)
 
 请求方式 | 请求路径
 ---|---
@@ -48,7 +48,7 @@ Get | /apiV2/bailunOrder/queryOrderStatus
 | OriginOrderNo | string | True | xxxx | 平台订单号         |
 | OrderStatus | OrderStatusDTO | True |  | 订单状态         | 
 | TrackingNo | string | False | xxxx | 跟踪号（物流单号）    |
-| LastUpdateTime | string | True | 2020-01-03 00:00:00 | 最后更新时间 |
+| LastUpdateTime | string | True | 2020-01-03 00:00:00 | 最后更新时间(UTC) |
 
 
 

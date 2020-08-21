@@ -1,4 +1,4 @@
-## Full query product sku inventory information
+## Full query product sku inventory information (Not implemented)
 Request method | Request path
 ---|---
 GET | /stock/getPageList
@@ -31,7 +31,7 @@ enTitle|string|English title
 pendingStock|long|The goods are in transit and waiting to be put on the shelf inventory quantity
 availabelStock|long|Product sku can ship inventory quantity
 shippedStock|long|Product sku shipped inventory quantity
-lastModificationTime|datetime|The last change time of product sku inventory
+lastModificationTime|datetime|The last change time of product sku inventory(UTC)
 
 # pages DTO
 Field | Type | Description

@@ -1,4 +1,4 @@
-## 采购下单
+## 采购下单 (未实现)
 请求方式 | 请求路径
 ---|---
 |Post | /api/purchase/service/createPurchaseOrder
@@ -14,7 +14,7 @@ poNumber|string|是|采购单号
 trackingBarCode|string|是|物流跟踪条码(用于线下扫码）
 remark|string|否|下单备注
 orderId|string|是|订单号
-arrivalDate|date|是|预计到货送达仓库的日期
+arrivalDate|date|是|预计到货送达仓库的日期(UTC)
 skudetails|List&lt;skudetail&gt;|是|sku明细
 
 
