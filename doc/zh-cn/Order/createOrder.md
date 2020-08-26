@@ -1,14 +1,15 @@
 ## OMS推送订单接口(未实现)
-请求方式 | 请求路径
----|---
-POST| /api/order/createOrder
+
+| 请求方式 | 请求路径               |
+| -------- | ---------------------- |
+| POST     | /api/order/createOrder |
 
   
 
 ## 请求说明
 
 - 参数类型为C#类型，其他语言请自行转换；
-- 创建订单后，后续再次推送只更新订单，+平台单号（OriginOrderNo）为唯一要素，请确保正确性；
+- 创建订单后，后续再次推送只更新订单，平台单号（OriginOrderNo）为唯一要素，请确保正确性；
 
 ## 请求参数（OrderCreateForExternal）
 
@@ -17,13 +18,13 @@ POST| /api/order/createOrder
   "originOrderNo": "string",
   "lastUpdateTimeUtc": "2020-08-13T08:46:09.196Z",
   "receiptAddress": {
-	"countryCode":"string",
-	"country":"string",
+    "countryCode":"string",
+    "country":"string",
     "stateOrRegion": "string",
     "city": "string",
     "address": "string",
     "address2": "string",
-	"postalCode":"string"
+    "postalCode":"string",
     "receiver": "string",
     "phone": "string",
     "phone2": "string"
@@ -43,10 +44,11 @@ POST| /api/order/createOrder
 }
 ```
 
-## 返回参数（OrderForExternalOutput）
+## 返回参数（BaseResponse）
 
 ```json
 {
+  "result":null,
   "message": "string",
   "code": 10000
 }
@@ -58,12 +60,12 @@ POST| /api/order/createOrder
 
 #### OrderCreateForExternal（订单创建DTO）
 
-| 字段                | 字段说明                 | 示例                | 字段类型               | Required |
-| :------------------ | :----------------------- | ------------------- | :--------------------- | -------- |
-| OriginOrderNo       | 原始订单号,平台单号      | 32000064249278      | string                 | true     |
-| LastUpdateTimeUtc   | 最后更新时间(UTC)             | 2020-02-02 08:15:30 | DateTime               | true     |
-| ReceiptAddress      | 收货地址                 |                     | ReceiptAddress         | true     |
-| PlatSkuItems        | sku信息                  |                     | List<PlatSkuItemInput> | true     |
+| 字段              | 字段说明            | 示例                | 字段类型               | Required |
+| :---------------- | :------------------ | ------------------- | :--------------------- | -------- |
+| OriginOrderNo     | 原始订单号,平台单号 | 32000064249278      | string                 | true     |
+| LastUpdateTimeUtc | 最后更新时间(UTC)   | 2020-02-02 08:15:30 | DateTime               | true     |
+| ReceiptAddress    | 收货地址            |                     | ReceiptAddress         | true     |
+| PlatSkuItems      | sku信息             |                     | List<PlatSkuItemInput> | true     |
 
 
 #### ReceiptAddress（收货地址）
@@ -103,7 +105,7 @@ POST| /api/order/createOrder
 
 
 
-#### OrderForExternalOutput（返回参数）
+#### BaseResponse（返回参数）
 
 | 字段    | 字段说明 | 示例         | 字段类型     | Required |
 | ------- | -------- | ------------ | ------------ | -------- |
@@ -120,4 +122,3 @@ POST| /api/order/createOrder
 | SUCCESS      | 创建成功     | 10000 |
 | ER_PARAMETER | 请求参数异常 | 10001 |
 | ER_SYSTEM    | 系统内部错误 | 10010 |
-| ER_NotFoundSKU    | 商品SKU未找到 | 11000 |
